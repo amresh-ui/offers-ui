@@ -1,0 +1,11 @@
+.modal::backdrop {
+  background: hsl(0 0% 0% / 50%);
+}
+
+.modal {
+  border: 0;
+  border-radius: 20px;
+  padding: 0px;
+  position: fixed;
+  box-shadow: hsl(0 0% 0% / 10%) 0 0 0.5rem 0.25rem;
+}

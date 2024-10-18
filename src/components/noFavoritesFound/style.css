@@ -1,0 +1,17 @@
+.app-content-card-view {
+  width: 100%;
+  /* background-color: '#fff'; */
+}
+
+.card-view-fav{
+    background-color: #F7F7F7;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(16, 24, 40, 0.05);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}

@@ -1,0 +1,174 @@
+/* src/components/FilterBottomSheetComponent.css */
+
+.bottom-sheet-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bottomsheet-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    padding-top: 0px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.bottomsheet-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #062A60;
+    font-weight: 600;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #919191;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    /* flex: 1; */
+    border-right: 1px solid #E1E1E1;
+
+}
+
+.sidebar h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #1B1B1B;
+    font-weight: 600;
+    background-color: #DCECF9;
+    padding: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 16px;
+    padding-bottom: 5px;
+}
+
+.main-content-header {
+    margin-bottom: 14px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-header p {
+    font-size: 11px;
+    color: #3E3E3E;
+    font-weight: 400;
+}
+
+.main-content-header img {
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+}
+
+.filter-options label {
+    display: flex;
+    margin-bottom: 8px;
+    color: #1B1B1B;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.filter-options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #2278C9;
+}
+
+
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.cancel-button,
+.apply-button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background: #fff;
+    color: #15497A;
+    font-weight: 500;
+    font-size: 14px;
+    width: 200px;
+    align-self: center;
+}
+
+.apply-button {
+    background: #ECF3FE;
+    color: #15497A;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.custom-date {
+    color: #1B1B1B;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-inputs label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #1B1B1B;
+    font-weight: 400;
+}
+
+.date-inputs input {
+    display: block;
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #D7D7D7;
+    border-radius: 10px;
+    width: 178px;
+    color: #1B1B1B;
+    font-size: 14px;
+    font-weight: 400;
+    background: url('../../../assets/calenderIcon.png') no-repeat right 10px center;
+    /* Set the path to your custom PNG icon */
+    background-size: 12px 12px;
+    position: relative;
+    -webkit-appearance: none; /* Removes default chrome and safari calendar icon */
+    -moz-appearance: none; /* Removes default Firefox calendar icon */
+    appearance: none; /* Standard syntax */
+}
+
+/* Hide the default date icon */
+.date-inputs input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    color: #007bff;
+    /* Set the icon color */
+}

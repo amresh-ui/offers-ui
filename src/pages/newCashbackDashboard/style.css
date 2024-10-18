@@ -1,0 +1,78 @@
+.app-container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9F7F3;
+    padding-bottom: 0px;
+    /* Ensure the parent container takes full height */
+}
+
+.app-content {
+    width: 100%;
+    padding: 20px;
+    margin-top: 45px;
+    background-color: #F9F7F3;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centers the title horizontally */
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #F9F7F3;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    position: fixed;
+    /* Fixes the header at the top */
+    width: 100%;
+    /* Ensures the header takes the full width */
+    top: 0;
+    /* Positions the header at the top */
+    z-index: 1000;
+    /* Ensures the header stays above other elements */
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    color: #1A1E23;
+    font-weight: 700;
+}
+
+.back-icon {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+}
+
+.back-icon-image {
+    height: 22px;
+    width: auto;
+}
+
+.increase-amount-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.increase-amount-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+    .increase-amount-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

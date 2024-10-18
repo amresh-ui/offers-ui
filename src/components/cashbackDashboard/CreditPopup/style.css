@@ -1,0 +1,57 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.popup-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* Prevent interactions when hidden */
+}
+
+
+.credit-popup-content {
+  background: #fff;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  max-width: 350px;
+  display: flex;
+  /* Allow flexbox alignment for content */
+  flex-direction: column;
+  /* Stack elements vertically */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-popup-icon {
+  width: 240px;
+  height: 226px;
+  /* margin-bottom: 15px; */
+}
+
+.credit-popup-amount {
+  font-size: 36px;
+  font-weight: 600;
+  color: #0D2F4F;
+}
+
+.credit-popup-status {
+  font-size: 16px;
+  color: #1B1B1B;
+  font-weight: 400;
+}
